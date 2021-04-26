@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sis</title>
+    <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+    <div class="controle">
+        <button class="desligar" title="Desligar"></button>
+        <button class="atualizar" title="Atualizar"></button>
+    </div>
+    
+        <fieldset id="formulario">          
+                <label for="senha">
+                    <input type="password" title="Digite sua senha Maximo 5 caracteris" id="senha" name="senha"
+                        placeholder="Senha ADM" minlength="3" maxlength="5">
+                    <button id="btLogar" name="btLogar">Logar</button>
+                </label>
+                <h1 class="texto-logo">Sisvcs</h1>        
+        </fieldset>
+
+        <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+        <span class="sr-only"></span>
+
+        <div class="container">
+            <div class="progress-bar" min=0% max=100%></div>
+        </div>
+
+   
+    <div class="sistema-ativo">
+        <h1>Sistema ativo</h1>
+    </div>
+   
+
+    <script src="../src/login.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

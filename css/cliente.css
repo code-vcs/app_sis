@@ -1,0 +1,128 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+fieldset{
+    background: rgb(102, 102, 102);
+    height: 36.25rem;
+    padding-top: 12px;
+    padding-left: 12px;
+
+}
+label{
+    color: white;
+    font-weight: bold;
+}
+input{
+    outline: none;
+    border-style: groove;
+    border: 1px solid lightgrey;
+    padding-left: 10px;
+    height: 25px;
+}
+input#nome{
+    width: 500px;
+    font-size: 15pt;
+}
+input::placeholder{
+    font-size: 12pt;
+    padding-top: 0px;
+}
+
+.fa-map-o{
+    color: rgb(29, 198, 221);
+}
+/*    capo    cep  */
+.fa-search{
+    color: yellow;
+    font-size: 20pt;
+    font-weight: bold;
+}
+#cep{
+    text-align: center;
+    background: black;
+    color: white;
+    font-weight: bold;
+}
+
+#logradouro{
+    text-align: center;
+    width: 480px;
+    font-weight: bold;
+}
+#bairro{
+    text-align: center;
+    width: 295px;
+    font-weight: bold;
+
+}
+#uf{
+    position: absolute;
+    background: white;
+    color: brown;
+    font-weight: bold;
+
+}
+#localidade{
+    text-align: center;
+    margin-left: 40px;
+    width: 350px;
+    font-weight: bold;
+
+}
+#numero-casa{
+    width: 105px;
+}
+#observacao{
+    width: 545px;
+}
+
+/*   pessoa juridica  */
+
+#nome-empressa{
+    width: 500px;
+}
+
+#email{
+    width: 350px;
+}
+#cep-2{
+    text-align: center;
+    background: black;
+    color: white;
+    font-weight: bold;
+}
+
+#logradouro-2{
+    text-align: center;
+    width: 480px;
+    font-weight: bold;
+}
+#bairro-2{
+    text-align: center;
+    width: 295px;
+    font-weight: bold;
+
+}
+#uf-2{
+    position: absolute;
+    background: white;
+    color: brown;
+    font-weight: bold;
+
+}
+#localidade-2{
+    text-align: center;
+    margin-left: 40px;
+    width: 350px;
+    font-weight: bold;
+
+}
+#numero-casa-2{
+    width: 105px;
+}
+#observacao-2{
+    width: 545px;
+}

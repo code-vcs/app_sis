@@ -1,0 +1,15 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+fieldset{
+    background: rgb(102, 102, 102);
+    height: 36.25rem;
+    padding-top: 12px;
+    padding-left: 12px;
+    color: rgb(0, 0, 0);
+
+}

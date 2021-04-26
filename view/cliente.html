@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sis___Login</title>
+    <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/cliente.css">
+</head>
+
+<body>
+
+    <fieldset>
+        <p>Pessoa fisica:</p>
+        <form action="">
+            <label for="nome">Nome completo
+                <input type="serach" id="nome" name="nome" placeholder="Nome Completo" required>
+            </label>
+            <label for="cpf">CPF
+                <input type="search" id="cpf" name="cpf" placeholder="CPF 125.655.805-00">
+            </label>
+            <label for="idade">Dt nascimento
+                <input type="date" id="dataIdade" name="dataIdade">
+            </label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="telefone-1">Telefone-1:
+                <input type="search" id="telefone-1" name="telefone-1" placeholder="Tel-1" maxlength="12">
+            </label>
+            <label for="telefone-2">Telefone-2:
+                <input type="search" id="telefone-2" name="telefone-2" placeholder="Tel-2" maxlength="12">
+            </label>
+            <label for="celular-1">Cel-1:
+                <input type="search" id="celular-1" name="celular-1" placeholder="Cel-1" maxlength="13">
+            </label>
+            <label for="celular-2">Cel-2:
+                <input type="search" id="celular-2" name="celular-2" placeholder="Cel-2" maxlength="13">
+            </label>
+            <!--    Area endereço  -->
+            <br>
+            <a href="https://www.google.com.br/maps/@-23.560192,-46.6419712,12z" target="_blank"><i
+                    class="fa fa-map-o fa-2x" title="Mapa / Localização"></i></a>
+
+            <label for="cep">CEP
+                <input type="search" id="cep" name="cep" placeholder="CEP 04858-160" maxlength="9"
+                    autocomplete="off">&nbsp;&nbsp;<i class="fa fa-search fa-1x" onclick="pesquisar()"></i>
+            </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="logradouro">
+                <input type="search" id="logradouro" name="logradouro" placeholder="logradouro" autocomplete="off">
+            </label>
+            <label for="bairro">
+                <input type="search" id="bairro" name="bairro" placeholder="Bairro" autocomplete="off">
+            </label><br>
+            <label for="uf">UF&nbsp;
+                <input type="button" id="uf" name="uf" style="width: 30px;padding-left: 0px;text-align: center;">
+            </label>
+            <label for="localidade">
+                <input type="search" id="localidade" name="localidade" placeholder="localidade" autocomplete="off">
+            </label>
+            <label for="numero-casa">N°
+                <input type="number" id="numero-casa" name="numero-casa" placeholder="N° 021">
+            </label>
+            <label for="obs">OBS
+                <input type="text" id="observacao" name="observacao" placeholder="Campo de observação" maxlength="200">
+            </label>
+            <hr>
+<!--PESSOA JURIDICA -->
+            <p>Pessoa juridica:</p>
+            <label for="cpf">CNPJ
+                <input type="search" id="cnpj" name="cnpj" placeholder="CPF 11.286.479/0001-50">
+            </label>
+            <label for="nome-empressa">Nome empressa
+                <input type="serach" id="nome-empressa" name="nome-empressa" placeholder="Nome da empressa" required>
+            </label>
+
+            <label for="telefone-1">Telefone-1:
+                <input type="search" id="telefone-1" name="telefone-1" placeholder="Tel-1" maxlength="12">
+            </label>
+            <label for="telefone-2">Telefone-2:
+                <input type="search" id="telefone-2" name="telefone-2" placeholder="Tel-2" maxlength="12">
+            </label>
+            <label for="celular-1">Cel-1:
+                <input type="search" id="celular-1" name="celular-1" placeholder="Cel-1" maxlength="13">
+            </label>
+            <label for="celular-2">Cel-2:
+                <input type="search" id="celular-2" name="celular-2" placeholder="Cel-2" maxlength="13">
+            </label>
+            <datalist id="email-empressa">
+                <option value="@gmail.com"></option>
+                <option value="@gmail.com.br"></option>
+                <option value="@hotmail.com"></option>
+                <option value="@hotmail.com.br"></option>
+                <option value="@outlook.com"></option>
+                <option value="@outlook.com.br"></option>
+                <option value="@terra.com"></option>
+                <option value="@terra.com.br"></option>
+                <option value="@ig.com"></option>
+                <option value="@ig.com.br"></option>
+
+            </datalist>
+            <label for="email">E-mail
+                <input type="email" id="email" name="email" list="email-empressa" placeholder="E-mail nome@gmail.com.br">
+            </label>
+            <!--    Area endereço  -->
+            <br>
+            <a href="https://www.google.com.br/maps/@-23.560192,-46.6419712,12z" target="_blank"><i
+                    class="fa fa-map-o fa-2x" title="Mapa / Localização"></i></a>
+
+            <label for="cep-2">CEP
+                <input type="search" id="cep-2" name="cep-2" placeholder="CEP 04858-160" maxlength="9"
+                    autocomplete="off">&nbsp;&nbsp;<i class="fa fa-search fa-1x" onclick="pesquisarCepEmpressa()"></i>
+            </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="logradouro-2">
+                <input type="search" id="logradouro-2" name="logradouro-2" placeholder="logradouro" autocomplete="off">
+            </label>
+            <label for="bairro-2">
+                <input type="search" id="bairro" name="bairro-2" placeholder="Bairro" autocomplete="off">
+            </label><br>
+            <label for="uf-2">UF&nbsp;
+                <input type="button" id="uf-2" name="uf-2" style="width: 30px;padding-left: 0px;text-align: center;">
+            </label>
+            <label for="localidade-2">
+                <input type="search" id="localidade-2" name="localidade-2" placeholder="localidade" autocomplete="off">
+            </label>
+            <label for="numero-casa">N°
+                <input type="number" id="numero-casa-2" name="numero-casa-2" placeholder="N° 021">
+            </label>
+            <label for="obs">OBS
+                <input type="text" id="observacao-2" name="observacao-2" placeholder="Campo de observação" maxlength="200">
+            </label>
+
+        </form>
+
+
+
+    </fieldset>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="../src/cliente.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
